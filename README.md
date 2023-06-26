@@ -1,0 +1,1 @@
+# querypack-model-manager
