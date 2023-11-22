@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPack.ModelManager.SqlS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPack.ModelManager.Api", "src\QueryPack.ModelManager.Api\QueryPack.ModelManager.Api.csproj", "{DB32A4AE-8118-402D-B754-542848739EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryPack.ModelManager.PostgreSql", "src\QueryPack.ModelManager.PostgreSql\QueryPack.ModelManager.PostgreSql.csproj", "{5A3F8D95-2B44-443F-B301-6E50E9002EA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,11 +40,16 @@ Global
 		{DB32A4AE-8118-402D-B754-542848739EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB32A4AE-8118-402D-B754-542848739EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB32A4AE-8118-402D-B754-542848739EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3F8D95-2B44-443F-B301-6E50E9002EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3F8D95-2B44-443F-B301-6E50E9002EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3F8D95-2B44-443F-B301-6E50E9002EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3F8D95-2B44-443F-B301-6E50E9002EA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{50E15B71-589D-4BC4-B5F1-73DE2E184489} = {B8ECD9D5-0CA6-46EF-A43B-CE9B5C348032}
 		{63DFF34B-9AFC-4AD1-9636-2F8A45148BDB} = {B8ECD9D5-0CA6-46EF-A43B-CE9B5C348032}
 		{695511B9-579E-4CD3-852B-5ACE654C1D2C} = {B8ECD9D5-0CA6-46EF-A43B-CE9B5C348032}
 		{DB32A4AE-8118-402D-B754-542848739EE9} = {B8ECD9D5-0CA6-46EF-A43B-CE9B5C348032}
+		{5A3F8D95-2B44-443F-B301-6E50E9002EA3} = {B8ECD9D5-0CA6-46EF-A43B-CE9B5C348032}
 	EndGlobalSection
 EndGlobal
