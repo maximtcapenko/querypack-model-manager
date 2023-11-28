@@ -10,7 +10,7 @@ namespace QueryPack.ModelManager.Schema.Processing.Processors.Impl
     {
         private const string _classFullNameFormat = "{0}.{1}";
         private const string _classFormat = "public class {0}";
-        private static List<string> _includes = new List<string>
+        private static readonly List<string> _includes = new()
         {
             "using System;",
             "using System.ComponentModel.DataAnnotations;",

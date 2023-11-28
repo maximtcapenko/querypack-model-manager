@@ -5,7 +5,7 @@ namespace QueryPack.ModelManager
 
     public class CSharpContextGenerator
     {
-        private static List<string> _includes = new List<string>
+        private static readonly List<string> _includes = new()
         {
             "using System;",
             "using System.ComponentModel.DataAnnotations;",
@@ -14,7 +14,7 @@ namespace QueryPack.ModelManager
             "using Microsoft.EntityFrameworkCore;",
         };
 
-        public string Generate(string @namespace, string contextClsName, string contextBaseClsName, IEnumerable<string> clsNames)
+        public static string Generate(string @namespace, string contextClsName, string contextBaseClsName, IEnumerable<string> clsNames)
         {
             var builder = new StringBuilder();
             foreach (var include in _includes)
