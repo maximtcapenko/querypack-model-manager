@@ -15,7 +15,7 @@
         {
             var scope = _serviceProvider.CreateScope();
             using var context = scope.ServiceProvider.GetRequiredService<PersistanceContext>();
-            await context.Database.EnsureCreatedAsync();
+            await context.Database.EnsureCreatedAsync(cancellationToken);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)

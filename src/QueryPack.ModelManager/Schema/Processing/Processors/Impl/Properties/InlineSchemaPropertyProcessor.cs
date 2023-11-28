@@ -6,7 +6,7 @@ namespace QueryPack.ModelManager.Schema.Processing.Processors.Impl.Properties
 
     internal class InlineSchemaPropertyProcessor : IPropertySchemaProcessor
     {
-        private static IEnumerable<Type> _supportedAnnotations = new List<Type>
+        private static readonly IEnumerable<Type> _supportedAnnotations = new List<Type>
         {
             typeof(ForeignKeyKeyword),
             typeof(ColumnKeyword),

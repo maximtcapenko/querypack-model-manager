@@ -68,7 +68,7 @@ namespace QueryPack.ModelManager.Schema.Impl
 
             var schemaModelSources = translationResult.TranlsatedFiles;
             var contextGenerator = new CSharpContextGenerator();
-            var compilesContextFile = contextGenerator.Generate(rootNamesapce, compiledContextClassName, scaffoldedContextClassName, schemaModelSources.Select(e => e.ClassName));
+            var compilesContextFile = CSharpContextGenerator.Generate(rootNamesapce, compiledContextClassName, scaffoldedContextClassName, schemaModelSources.Select(e => e.ClassName));
 
             sourceFiles["translatedFiles"] = schemaModelSources.Select(e => e.SourceCode);
             sourceFiles["scaffoldedFiles"] = translationResult.AdditionalFiles.Select(e => e.SourceCode);

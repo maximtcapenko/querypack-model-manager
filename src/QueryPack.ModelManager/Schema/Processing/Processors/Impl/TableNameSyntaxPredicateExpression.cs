@@ -5,7 +5,7 @@
 
     internal class TableNameSyntaxPredicateExpression
     {
-        static string[] tableAttributes = { "Table", "TableAttribute" };
+        static readonly string[] tableAttributes = { "Table", "TableAttribute" };
         private readonly string _tableName;
 
         public TableNameSyntaxPredicateExpression(string tableName)
